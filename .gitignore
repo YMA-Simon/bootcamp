@@ -1,0 +1,33 @@
+# JS, Svelte
+**/.svelte-kit
+**/package
+**/node_modules
+
+# Python
+**/.venv
+**/.pytest_cache
+**/__pycache__
+
+# Rust
+**/target
+
+# Dev
+.env
+.env.*
+**/build
+**/dist
+
+# Tools
+**/.vscode
+**/.eslintrc.cjs
+**/.eslintignore
+**/.prettierrc
+**/.prettierignore
+
+# tauri
+**/icons
+
+# lock, disable as needed
+pnpm-lock.yaml
+package-lock.json
+poetry.lock
