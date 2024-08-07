@@ -34,14 +34,16 @@ public class DemoString {
     int age = 10;
     System.out.println("yo, " + age + " years old kid");
 
-    System.out.println("-----------");
+    System.out.println("---------------------------------");
     String str1 = "example";
     String str2 = "example";
-    boolean ans = str1 == str2;
-    System.out.println(ans);
-
     // since string is a complex type/ object, there is method associated with it
     System.out.println(str1.equals(str2));
+
+    boolean ans = str1 == str2;
+    System.out.println(ans);
+    // since String is an object, "==" does not ensure underlying value comparsion
+    // tho this works, it is better to use method associated
 
     // length return int only
     int l = "asdasdasd".length();
