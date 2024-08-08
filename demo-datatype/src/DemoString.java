@@ -29,12 +29,12 @@ public class DemoString {
     String a4 = abc + '!';
 
 
-    System.out.println("-----------");
+    System.out.println("-".repeat(32));
     // exp1
     int age = 10;
     System.out.println("yo, " + age + " years old kid");
 
-    System.out.println("---------------------------------");
+    System.out.println("-".repeat(32));
     String str1 = "example";
     String str2 = "example";
     // since string is a complex type/ object, there is method associated with it

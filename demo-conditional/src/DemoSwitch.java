@@ -9,7 +9,7 @@ public class DemoSwitch {
     }
 
     // 1. if no break, it will go through all cases
-    // 2. no logic operator for each case, only compare
+    // 2. no logic operator for each case, only compare (primitive)
     // 3. this is only useful for finite scenarios
 
     String dayInput = "TUE";

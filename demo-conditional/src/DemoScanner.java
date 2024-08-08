@@ -27,7 +27,7 @@ public class DemoScanner {
     while (isContOps) {
       Scanner s = new Scanner(System.in);
 
-      System.out.println("-----------------------------------");
+      System.out.println("-".repeat(32));
       System.out.println(
           "Please choose ops (1-Deposit, 2-Withdraw, 3-Check balance, quit): ");
       int ops = s.nextInt();

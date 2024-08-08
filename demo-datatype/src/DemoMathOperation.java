@@ -15,7 +15,7 @@ public class DemoMathOperation {
     // same as other lang, divide by 0 throw an error
     // System.out.println(10 / 0);
 
-    System.out.println("----------");
+    System.out.println("-".repeat(32));
     // practice
     int a1 = 1 + 1;
     int a2 = 1 - 1;
@@ -38,7 +38,7 @@ public class DemoMathOperation {
     System.out.println(b4);
     System.out.println(b5);
 
-    System.out.println("----------");
+    System.out.println("-".repeat(32));
     double b6 = 0.2 + 0.1;
     System.out.println(b6);
 
@@ -46,7 +46,7 @@ public class DemoMathOperation {
     System.out.println(b7);
 
 
-    System.out.println("----------");
+    System.out.println("-".repeat(32));
     // increment, same for -, *, /
     double c1 = 1;
     c1 = c1 + 1;
@@ -61,7 +61,7 @@ public class DemoMathOperation {
     // double c2 = 1;
     // (c2++);
 
-    System.out.println("----------");
+    System.out.println("-".repeat(32));
     // prac2
     int A = 3;
     int O = 10;
@@ -72,7 +72,7 @@ public class DemoMathOperation {
     System.out.println(total);
 
 
-    System.out.println("----------");
+    System.out.println("-".repeat(32));
     // prac 3
     int m = 90;
     int e = 78;
@@ -90,9 +90,9 @@ public class DemoMathOperation {
     System.out.println(avg2);
     System.out.println("but '(m + e + h) / 3.0' works, and give the correct result");
     System.out.println("also '(m + e + h) / 3d' works too");
-    System.out.println("----------");
+    System.out.println("-".repeat(32));
 
-    System.out.println("----------");
+    System.out.println("-".repeat(32));
     int cnt = 0;
     int ans;
     ans = cnt++ + 3;

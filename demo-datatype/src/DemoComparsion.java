@@ -22,7 +22,7 @@ public class DemoComparsion {
     System.out.println(rand1 == rand2); // false
 
 
-    System.out.println("--------------------");
+    System.out.println("-".repeat(32));
     int val1 = 10;
     int val2 = 12;
     int val3 = 14;

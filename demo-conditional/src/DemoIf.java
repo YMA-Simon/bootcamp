@@ -27,7 +27,7 @@ public class DemoIf {
     System.out.println(isVowel); // true
 
 
-    System.out.println("---------------------------------");
+    System.out.println("-".repeat(32));
     // exp1
     int num = -3;
 
@@ -99,7 +99,7 @@ public class DemoIf {
     }
     System.out.println(input + " is an " + cond + " number.");
 
-    System.out.println("---------------------------------");
+    System.out.println("-".repeat(32));
     // exp6
     String str = "hello";
     // get last char
@@ -110,7 +110,7 @@ public class DemoIf {
       System.out.println("The last char is " + str.charAt(str.length() - 1));
     }
 
-    System.out.println("---------------------------------");
+    System.out.println("-".repeat(32));
     // exp7
     // string reversal
     int cnt = 0;
@@ -135,7 +135,7 @@ public class DemoIf {
     ret = new StringBuilder(str).reverse().toString();
     System.out.println(ret);
 
-    System.out.println("---------------------------------");
+    System.out.println("-".repeat(32));
     // exp8
     // Divided by 4
     // not divide by 100 OR divide by 400
@@ -150,7 +150,7 @@ public class DemoIf {
       System.out.println(year + " is" + cond + "a leap year.");
     }
 
-    System.out.println("---------------------------------");
+    System.out.println("-".repeat(32));
     // exp9
     int age = 19;
     boolean isCitizen = true;
@@ -168,7 +168,7 @@ public class DemoIf {
     }
     System.out.println(cond);
 
-    System.out.println("---------------------------------");
+    System.out.println("-".repeat(32));
     // exp10
     double tot = 250.0;
     double dis = 0;
@@ -188,10 +188,11 @@ public class DemoIf {
     System.out.println("amount=" + pay);
 
 
-    System.out.println("---------------------------------");
+    System.out.println("-".repeat(32));
     // exp11
     char ip = 'x';
 
+    // since compare char (primitive), 'a' == 'x' is ok
     if ("a".equals(ip) || "e".equals(ip) || "i".equals(ip) || "o".equals(ip)
         || "u".equals(ip)) {
       cond = ip + " is vowel.";
@@ -211,7 +212,7 @@ public class DemoIf {
     System.out.println(ip + " is " + ans + ".");
 
 
-    System.out.println("---------------------------------");
+    System.out.println("-".repeat(32));
     // exp12
     // password
     // no special char, #!@$
@@ -219,10 +220,10 @@ public class DemoIf {
 
     String pwd = "asdsaasasdsaasddasdsaasd";
 
-    boolean isSP = pwd.contains("#") || pwd.contains("!") || pwd.contains("@")
+    boolean hasSP = pwd.contains("#") || pwd.contains("!") || pwd.contains("@")
         || pwd.contains("$");
 
-    if (!isSP && pwd.length() >= 12) {
+    if (!hasSP && pwd.length() >= 12) {
       System.out.println("strong");
     } else {
       System.out.println("weak");
@@ -230,17 +231,36 @@ public class DemoIf {
 
 
     String sps = "#!@$";
-    isSP = false;
+    hasSP = false;
     for (char sp : sps.toCharArray()) {
       if (pwd.contains(String.valueOf(sp)))
-        isSP = true;
+        hasSP = true;
+      break;
     }
 
-    if (!isSP && pwd.length() >= 12) {
+    if (!hasSP && pwd.length() >= 12) {
       System.out.println("strong");
     } else {
       System.out.println("weak");
     }
+
+    System.out.println("-".repeat(32));
+    int x1 = 3;
+    int y = (x1++ + 3) * x1++;
+    // (3 + 3) * 4
+    // the x1 in bracket is incremented,
+    // so the x1 out of bracket is 4 when calculating *
+    // x++ is only operates after x is added/ multiple to something else
+    // so precedence table is still correct
+    System.out.println(y);
+
+    x1 = 3;
+    int y1 = (x1++ + 3) * x1++ - x1++;
+    // y = (3 + 3) * 4 - 5
+    // first x1 is incremented after added
+    // second x1 is incremented after multiple
+    // third x1 is incremented after subtract
+    System.out.println(y1); // 19
 
 
   }
